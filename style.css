@@ -1,0 +1,41 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+fieldset {
+    text-align: center;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin: 5px;
+}
+
+div {
+    text-align: center;
+    border: 1px solid gray;
+    width: max-content;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: rgb(34, 117, 201);
+}

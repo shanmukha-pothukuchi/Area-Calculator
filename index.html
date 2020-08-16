@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="script.js" async></script>
+    <title>Finding Area</title>
+</head>
+<body>
+    <fieldset id="choices">
+    <input id="triangle" name="choices" type="radio" onclick="showTriangle()">Triangle
+        <input id="circle" name="choices" type="radio" onclick="showCircle()">Circle
+        <input id="square" name="choices" type="radio" onclick="showSquare()">Square
+        <input id="rectangle" name="choices" type="radio" onclick="showRectangle()">Rectangle
+    </fieldset>
+    <br>
+    <div id="traiangle-calculator" style="display: none;">
+        <h1 id="tri-heading" style="font-size: 26px;">Triangle</h1>
+        <label for="triSide1">Side 1:</label>
+        <input id="triSide1" type="text">cm<br>
+        <label for="triSide2">Side 2:</label>
+        <input id="triSide2" type="text">cm<br>
+        <label for="triSide3">Side 3:</label>
+        <input id="triSide3" type="text">cm<br>
+        <button id="triArea" onclick="triangle(triSide1.value, triSide2.value, triSide3.value)">Calculate</button>
+        <h1 id="triResult">-</h1>
+    </div>
+    <div id="circle-calculator" style="display: none;">
+        <h1 id="cir-heading" style="font-size: 26px;">Circle</h1>
+        <label for="cirRadius">Radius :</label>
+        <input id="cirRadius" type="text">cm<br>
+        <button id="cirArea" onclick="circle(cirRadius.value)">Calculate</button>
+        <h1 id="cirResult">-</h1>
+    </div>
+    <div id="square-calculator" style="display: none;">
+        <h1 id="squ-heading" style="font-size: 26px;">Square</h1>
+        <label for="squSide">Side :</label>
+        <input id="squSide" type="text">cm<br>
+        <button id="squArea" onclick="square(squSide.value)">Calculate</button>
+        <h1 id="squResult">-</h1>
+    </div>
+    <div id="rectangle-calculator" style="display: none;">
+        <h1 id="rec-heading" style="font-size: 26px;">Rectangle</h1>
+        <label for="recSide1">Side 1 :</label>
+        <input id="recSide1" type="text">cm<br>
+        <label for="recSide2">Side 2 :</label>
+        <input id="recSide2" type="text">cm<br>
+        <button id="recArea" onclick="rectangle(recSide1.value, recSide2.value)">Calculate</button>
+        <h1 id="recResult">-</h1>
+    </div>
+</body>
+</html>
